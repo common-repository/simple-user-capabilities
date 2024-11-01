@@ -1,0 +1,156 @@
+#permission_menu, .column-permission_menu{width: 154px; text-align: center !important;}
+.tooltip-inner {
+  max-width: 300px;
+}
+/* The Modal (background) */
+.userAccess-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .userAccess-modal-content {
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  
+  /* The Close Button */
+  #myModal .close {
+    color: white;
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  #myModal .close:hover,
+  #myModal .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .userAccess-modal-header {
+    padding: 2px 16px;
+    background-color: #2271b1;
+    color: white;
+  }
+  .userAccess-modal-header h2{color: #fff; font-size: 22px; padding-top: 6px;}
+  .userAccess-modal-body {padding: 2px 16px; padding-bottom: 35px;}
+  .userAccess-modal-body h3{font-size: 17px;}
+  #save_user_access{margin-top:25px}
+  .userAccess-modal-footer {
+    padding: 2px 16px;
+    background-color: #2271b1;
+    color: white;
+  }
+
+  .bootstrap-select{width: 100% !important;}
+  .bootstrap-select>.dropdown-toggle{
+   /*  display: block; */
+    /* width: 100%; */
+    /* padding: 0 25px 0 12px; */
+    height: 38px;
+    line-height: 24px;
+    overflow: hidden;
+    border: 1px solid;
+    color: #646b73 !important;
+    background: #f3f3f3 !important;
+    border-color: #d1d1d1 !important;
+  }
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+
+  /*LOADER STYLE */
+  .user_access_loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: access-spin 2s linear infinite;
+    animation: access-spin 2s linear infinite;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999999;
+}
+
+@-webkit-keyframes access-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes access-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* pop up message */
+
+#success-popup {
+  display: none;
+  padding: 2px 11px 8px 11px;
+  font-size: 11px;
+  font-family: verdana;
+  position: fixed;
+  right: 50%;
+  margin-right: -150px;
+  top: 10%;
+  width: 301px;
+  z-index: 9999;
+}
+
+.dropdown-menu.show { width:100%; transform: translate(0px, 40px); }
